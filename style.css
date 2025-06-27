@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('Image-1.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.tile-rack, .board-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  min-height: 80px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: 1px solid #333;
+  background-color: #eee;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: move;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  border: 2px dashed #aaa;
+  background-color: white;
+}
+
+.double-letter { background-color: lightblue; }
+.triple-letter { background-color: darkblue; color: white; }
+.double-word { background-color: pink; }
+.triple-word { background-color: red; color: white; }
+
+.controls {
+  margin-top: 20px;
+}
+
+#score {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
