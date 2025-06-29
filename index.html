@@ -1,8 +1,18 @@
+ <!-- 
+    File: index.html
+    GUI Assignment: HW5 - Scrabble Game with Drag-and-Drop
+    Joseph Vandan Butti, UMass Lowell Computer Science, jbutti@cs.uml.edu
+    Copyright (c) 2025 by Joseph Vandan Butti. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+    Created on June 28, 2025
+    Description: This web page implements a browser-based Scrabble game with drag-and-drop functionality,
+    real-time scoring, bonus tiles, and responsive layout.
+  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Scrabble Game - HW5</title>
+  <title>Scrabble Game - Full Board</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -12,9 +22,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>Scrabble - Single Row</h1>
+    <h1>Scrabble - Full Board</h1>
+    <p>Drag tiles to the board to form a word. Click "Submit Word" to score. Valid words only.</p>
     <div id="rack" class="tile-rack"></div>
-    <div id="board" class="board-row"></div>
+    <div id="board" class="board-container"></div>
     <div class="controls">
       <button id="submit-word">Submit Word</button>
       <button id="restart-game">Restart</button>
