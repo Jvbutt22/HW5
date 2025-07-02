@@ -106,6 +106,12 @@ $("#submit-word").click(() => {
     $("#score").text("Score: " + score);
     drawTiles();
     alert("Word submitted: " + word);
+    
+    $(".square.filled").each(function () {
+      $(this).text("").removeClass("filled").removeData("letter");
+      $(this).droppable("enable");
+    });
+
   } else {
     alert("No word submitted. Try again.");
   }
